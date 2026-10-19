@@ -1,0 +1,42 @@
+{
+  "name": "fixmybuild",
+  "version": "1.0.0",
+  "description": "AI-powered build error resolver using local open-source models via Ollama",
+  "type": "module",
+  "bin": {
+    "fixmybuild": "./dist/index.js",
+    "fix": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "build",
+    "error",
+    "fix",
+    "ai",
+    "ollama",
+    "cli",
+    "developer-tools",
+    "debugging"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "ollama": "^0.5.14",
+    "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
